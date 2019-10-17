@@ -2,8 +2,8 @@
 # coding: utf-8
 
 # # GALAXY CLASSIFIER
-# 
-# This IPython Notebook contains the Python code for implementing a Convolution Neural Network(CNN) Architecture for Classification of Galaxy Images into it's 3 corresponding classes- Spiral type, Ireegular type and Elliptical type. The model was trained on Nvidia 960MX GPU followed by an intensive training on the NVIDIA DGX 1 Octa Tesla V100 Supercomputer servers using technologies like Putty and WinSCP. On training for 40 epochs, it was observed the training accuracy was at 95.00% with training loss at 15.37% while Validation accuracy was at 94.75% and Validation loss at 15.31%. The Training set containing 3 classes were a total of 3232 images while the Validation set containing the same number of classes contained 1190 images. 
+#
+# This IPython Notebook contains the Python code for implementing a Convolution Neural Network(CNN) Architecture for Classification of Galaxy Images into it's 3 corresponding classes- Spiral type, Ireegular type and Elliptical type. The model was trained on Nvidia 960MX GPU followed by an intensive training on the NVIDIA DGX 1 Octa Tesla V100 Supercomputer servers using technologies like Putty and WinSCP. On training for 40 epochs, it was observed the training accuracy was at 95.00% with training loss at 15.37% while Validation accuracy was at 94.75% and Validation loss at 15.31%. The Training set containing 3 classes were a total of 3232 images while the Validation set containing the same number of classes contained 1190 images.
 
 # In[1]:
 
@@ -78,7 +78,7 @@ classifier = model.fit_generator(
         validation_steps=100)
 
 end = timeit.default_timer()
-print("Time Taken to run the model:",end - start, "seconds") 
+print("Time taken to run the Model:",end - start, "seconds") 
 
 
 # In[29]:
@@ -87,6 +87,3 @@ model.save_weights('model.h5')
 
 
 # In[ ]:
-
-
-
